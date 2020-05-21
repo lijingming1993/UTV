@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+clear all;
+clc;
+close all;
+I= imread('.\input\a.jpg'); 
+a=0.01;
+b=10;
+figure('name','Original image');
+imshow(I);
+[t1,J,E]=UTV(I,a,b);
+figure('name','Restored result');
+imshow(J);
